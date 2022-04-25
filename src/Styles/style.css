@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  background: #F9F9F9;
+  overflow-x: hidden;
+}
+
+nav {
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+  width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100vw;
+}
+
+.logos {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0px;
+  color: #1D1D1D;
+  margin-left: -30px;
+  width: 758px;
+}
+
+.logos .logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #4EC6A6;
+  position: relative;
+}
+
+.logos .logo .logo-inner {
+  position: absolute;
+  width: 32.06px;
+  height: 41.08px;
+  background-color: #FFFFFF;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  top: 4.98px;
+  left: 9.51px;
+}
+
+.logos .logo .logo-mini {
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: transparent linear-gradient(128deg, #EDAD0D 0%, #FF6B6B 100%) 0% 0% no-repeat padding-box;
+  top: 24px;
+  left: 17.5px;
+}
+
+.logos .logo .logo-dot {
+  position: absolute;
+  border-radius: 50%;
+  width: 5.76px;
+  height: 6.76px;
+  top: 27px;
+  left: 25.24px;
+  -webkit-transform: matrix(0.89, -0.45, 0.45, 0.89, 0, 0);
+          transform: matrix(0.89, -0.45, 0.45, 0.89, 0, 0);
+  background: #F5F4F4 0% 0% no-repeat padding-box;
+}
+
+.logos .logo-name {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  width: 108px;
+}
+
+.logos .logo-name .logo-name1 {
+  font: normal normal normal 24px/34px Krona One;
+  letter-spacing: 0px;
+  color: #1D1D1D;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.logos .logo-name .logo-sub {
+  font: normal normal normal 16px/26px Interstate;
+  margin-top: -5px;
+}
+
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1162px;
+  font: normal normal normal 16px/26px Interstate;
+  letter-spacing: 0px;
+  color: #1D1D1D;
+}
+
+.menu1, .menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu1 .menuItem, .menu2 .menuItem {
+  margin-right: 30px;
+}
+
+.menu1 .menuItemClick, .menu2 .menuItemClick {
+  color: #FF6B6B;
+  margin-right: 30px;
+}
+
+.menu1 {
+  width: 415px;
+}
+
+.menu2 {
+  margin-left: 45px;
+}
+
+.menu2 button {
+  width: 120px;
+  height: 35px;
+  border: 1px solid #1D1D1D;
+  font: normal normal 300 10px/18px Interstate;
+  letter-spacing: 0px;
+  color: #1D1D1D;
+  text-transform: uppercase;
+}
+
+.primary {
+  width: 150px;
+  height: 60px;
+  text-transform: uppercase;
+  border: none;
+  font: normal normal normal 16px/26px Interstate;
+  text-transform: uppercase;
+}
+
+.secondary {
+  width: 150px;
+  height: 60px;
+  background: #A2DE96 0% 0% no-repeat padding-box;
+  text-transform: uppercase;
+  border: none;
+  font: normal normal normal 16px/26px Interstate;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.secondary:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.cart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.image {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  z-index: 3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  width: 180px;
+  height: 90px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  padding: 14px 13px 45px 26px;
+  margin-left: -20px;
+  margin-top: 16px;
+  color: #1D1D1D;
+  font-family: 'Raleway, Regular';
+}
+
+.card .card-body {
+  font-size: 14px;
+}
+
+.card .card-footer {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+.card .card-footer .price {
+  color: #4EC6A6;
+}
+
+.card .card-footer .cart-image {
+  width: 41px;
+  height: 34px;
+  margin: -3px -13px 0 0;
+  background: #FF947B 0% 0% no-repeat padding-box;
+  border-radius: 100% 0 0 0;
+  position: relative;
+}
+
+.card .card-footer .cart-image .cart {
+  height: 12px;
+  position: absolute;
+  top: -28px;
+  left: -156px;
+}
+
+.container-latest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 75.3px;
+}
+
+.container-latest .recipe-latest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-latest .latest {
+  width: 283px;
+  height: 51px;
+  text-align: left;
+  font: normal normal 300 44px/54px Gilroy;
+  letter-spacing: 0px;
+  color: #131505;
+  line-height: 54px;
+}
+
+.container-latest .svg-image .prev {
+  margin-left: 50px;
+}
+
+.container-latest .svg-image .next {
+  margin-left: 50px;
+}
+
+.container-latest .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 42px 52px 157px 47px;
+  padding: 0 125px;
+}
+
+.dish {
+  width: 115%;
+  position: relative;
+  top: 48px;
+}
+
+.veggy {
+  width: 100%;
+}
+
+.product-container {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 47%;
+  z-index: 1000;
+  width: 160px;
+  height: 175px;
+  padding: 15px;
+}
+
+.item {
+  text-align: left;
+  font: normal normal 300 16px/26px Interstate;
+  letter-spacing: 0px;
+  color: #1D1D1D;
+  opacity: 1;
+}
+
+.taste {
+  width: 413px;
+  height: 118px;
+  padding-right: 85px;
+  margin-top: 12px;
+  text-align: left;
+  font: normal normal 300 45px/60px Gilroy;
+  color: #131505;
+  margin-bottom: 39px;
+}
+
+.taste2 {
+  font-size: 16px;
+  width: 404px;
+  height: 104px;
+}
+
+.container-shop {
+  margin-top: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 781px;
+}
+
+.fruit {
+  width: 679px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fruit .fruit-pad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -40px;
+}
+
+.shop-text .recipes {
+  width: 404px;
+  margin-top: 55px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-text {
+  width: 758px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-text .text-left {
+  position: absolute;
+  left: 145px;
+}
+
+.page-image {
+  width: 1162px;
+  background: #F1F7EA;
+}
+
+.lead {
+  color: #1D1D1D;
+  font: normal normal 800 55px/80px Gilroy;
+}
+
+.small {
+  height: 100px;
+  color: #131505;
+  line-height: 48px;
+  font-size: 38px;
+  width: 317px;
+}
+
+.sub-taste {
+  margin-bottom: 39px;
+}
+/*# sourceMappingURL=style.css.map */
